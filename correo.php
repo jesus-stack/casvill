@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 $nombre=$_REQUEST["nombre"];
 $email=$_REQUEST["email"];
 $fecha=new Datetime($_REQUEST["fecha"]);
@@ -10,6 +11,19 @@ foreach($_REQUEST["grado"] as $option){
 }
 
 $mensaje=$_REQUEST["mensaje"];
+=======
+$nombre=$_GET["nombre"];
+$email=$_GET["email"];
+$fecha=new Datetime($_GET["fecha"]);
+$hoy=new DateTime('now');
+$genero=$_GET["genero"];
+$grado=''; 
+foreach($_GET["grado"] as $option){
+   $grado=$grado.','.$option;
+}
+
+$mensaje=$_GET["mensaje"];
+>>>>>>> 774c7038ac4fad1334a4b0590cb27b27399f6d5e
 $interval=$fecha->diff($hoy);
 $edad=$interval->format('%y');
        
