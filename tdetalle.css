@@ -1,0 +1,17 @@
+
+.main{
+    background: linear-gradient(rgb(221, 43, 177),#1BA0A7);
+    
+    
+}
+.main img{
+    background:#1BA0A7;
+    height: 50%;
+}
+.main .card{
+    background-color: rgba(0, 0, 0, 0);
+}
+.card .card-header h4{
+    color: black;
+
+}

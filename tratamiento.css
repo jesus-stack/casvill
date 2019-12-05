@@ -1,0 +1,103 @@
+.tratamientos{
+    place-content: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ 
+  
+  }
+  .tratamientos .box{
+      position: relative;
+      margin: 10px;
+  }
+  .tratamientos .box .tratamiento{
+  
+  width: 280px;
+  height: 200px;
+  
+  margin:10px;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  align-content: center;
+
+  }
+  .tratamientos .box .tratamiento .timg{
+    margin-left: 60px;
+  }
+  .box  a{
+      position: absolute;
+      top:200;
+      left: 120;
+      width: 70px;
+      padding: 2px;
+      text-align: center;
+      border-radius:20px;
+      border: solid  #41AEBA 4px;
+      background-color: #41AEBA;
+      color: white;
+      text-decoration: none;
+
+  }
+  .box:hover{
+
+      background-color: #37B2B7;
+  }
+  .box a:hover{
+    border: solid  #41AEBA 4px;
+      color: black;
+      background-color: #73BBDC;
+  }
+  
+  .tratamientos .tratamiento h5{
+      margin-top: 5px;
+      margin-left:75px;
+      color: grey;
+  }
+
+
+  .detail{
+     overflow: hidden;
+    
+     
+  }
+  .detail-head:hover{
+      color: darkcyan;
+  }
+
+  
+  .carousel{
+   
+  height: 500px;
+   background: linear-gradient(rgb(221, 43, 177),#1BA0A7);
+
+  }
+
+  .card{
+   background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+  border: none;
+color: white;
+    place-content: center;
+  }
+  .card h4{
+      text-align: center;
+  }
+
+  .card p{
+margin: 10% ;
+font-size:200%;
+  }
+  @media(max-width:700px){
+    .carousel{
+        height: 300px;
+    }
+    .card p{
+   
+   font-size: 100%;
+     }
+
+ 
+  
+  

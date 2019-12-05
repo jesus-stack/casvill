@@ -1,0 +1,41 @@
+.title{
+    margin: 10px;
+    height: 20vh;
+   
+}
+.title h1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+ 
+}
+
+.title h1 {
+    display: inline-block;
+    animation: animate 1s linear ;
+
+}
+
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotatex(90deg);
+        filter:blur(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotatex(0deg);
+        filter:blur(0px);
+
+
+    }
+}
+
+.text{
+    color: darkcyan;
+
+    margin-left: -20px;
+}
