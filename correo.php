@@ -1,15 +1,15 @@
 <?php
-$nombre=$_REQUEST["nombre"];
-$email=$_REQUEST["email"];
-$fecha=new Datetime($_REQUEST["fecha"]);
+$nombre=$_POST["nombre"];
+$email=$_POST["email"];
+$fecha=new Datetime($_POST["fecha"]);
 $hoy=new DateTime('now');
-$genero=$_REQUEST["genero"];
+$genero=$_POST["genero"];
 $grado=''; 
-foreach($_REQUEST["grado"] as $option){
+foreach($_POST["grado"] as $option){
    $grado=$grado.','.$option;
 }
 
-$mensaje=$_REQUEST["mensaje"];
+$mensaje=$_POST["mensaje"];
 
 $interval=$fecha->diff($hoy);
 $edad=$interval->format('%y');
